@@ -8,6 +8,7 @@ public class RandomArrayGenerator {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int[] ar = new int[n];
+        System.out.println(n);
         for (int i = 0; i < n; i++) {
             ar[i] = (int) (Math.random() * 10000 + 1);
             System.out.print(ar[i] + ",");
