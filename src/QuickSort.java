@@ -39,10 +39,6 @@ public class QuickSort {
             quickSort(lowerIndex, j);
         if (i < higherIndex)
             quickSort(i, higherIndex);
-        for (int k = 0; k < array.length; k++){
-            System.out.print(array[k] + " ");
-        }
-        System.out.println();
     }
     private void exchangeNumbers(int i, int j){
         int temp = array[i];
