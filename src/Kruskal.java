@@ -117,7 +117,6 @@ public class Kruskal {
         * where V = # of vert, E = # of edge,
         * S1 = first source node, D1 = first end node, first edge weight
         through to e nodes, where e = E
-        For this implementation, node numbering must start at 0
         */
         for (int i = 0; i < E; i++){
             graph.edge[i].src = in.nextInt();
