@@ -155,6 +155,7 @@ public class FFTColumbia {
             fft.fft(re, im);
         time = System.currentTimeMillis() - time;
         System.out.println("Averaged " + (time / iter) + "ms per iteration");
+        //comment
     }
 
     protected static void beforeAfter(FFTColumbia fft, double[] re, double[] im){
