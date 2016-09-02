@@ -45,7 +45,7 @@ public class IterativeDFS {
         ArrayList<ArrayList<Integer>> adjLists = new ArrayList<ArrayList<Integer>>();
         final int n = 7;
 
-        // Add an empty adjacency list for each vertex
+        // Add an empty adjacency list for each vertex (arbitrary change was made)
         for(int v=0; v<n; v++){
             adjLists.add(new ArrayList<Integer>());
         }
