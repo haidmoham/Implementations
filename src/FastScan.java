@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 public class FastScan {
     public static void main(String[] args) throws Exception {
         FastScanner scanner = new FastScanner();
-        long val = scanner.nextLong()
+        long val = scanner.nextLong();
         String str = scanner.readNextLine();
 
         System.out.println(val);
