@@ -5,11 +5,16 @@ import java.util.*;
 
 public class MergeSort {
     public static void main(String[] args) {
-        Integer[] a = {2, 6, 3, 5, 1};
+        long start = System.currentTimeMillis();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        Integer[] a = new Integer[n];
+        for (int i = 0; i < n; i++)
+            a[i] = sc.nextInt();
 
         mergeSort(a);
-
-        System.out.println(Arrays.toString(a));
+        long end = System.currentTimeMillis();
+        System.out.println(end - start);
     }
     public static Comparable[] mergeSort(Comparable[] list){
         if (list.length <= 1){

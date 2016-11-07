@@ -4,7 +4,7 @@
 import java.util.*;
 
 public class QuickSort {
-    private int array[];
+    static int array[];
     private int length;
 
     public void sort(int[] inputArr){
@@ -46,10 +46,15 @@ public class QuickSort {
         array[j] = temp;
     }
     public static void main(String a[]){
+        long start = System.currentTimeMillis();
         QuickSort sorter = new QuickSort();
-        int[] input = {24,2,45,20,56,75,2,56,99,53,12};
-        sorter.sort(input);
-        for (int i:input)
-            System.out.print(i + " ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        array = new int[n];
+        for (int i = 0; i < n; i++)
+            array[i] = sc.nextInt();
+        sorter.sort(array);
+        long end = System.currentTimeMillis();
+        System.out.println(end - start);
     }
 }

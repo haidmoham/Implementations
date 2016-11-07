@@ -40,23 +40,18 @@ public class HeapSort {
     }
 
     public static void main(String[] args){
+        long start = System.currentTimeMillis();
         Scanner s = new Scanner(System.in);
-        System.out.println("Heap Sort Test\n");
         int n, i;
         //# of elements
-        System.out.println("Enter number of elements: ");
         n = s.nextInt();
         //Array of n elements
-        System.out.println("Enter elements: ");
         int[] arr = new int[n];
         for (i = 0; i < n; i++)
             arr[i] = s.nextInt();
         //Sort array
         sort(arr);
-        System.out.println("\nElements after sorting: ");
-        for (i = 0; i < n; i++)
-                System.out.print(arr[i] + " ");
-        System.out.println();
+        long end = System.currentTimeMillis();
+        System.out.println(end - start);
     }
-
 }

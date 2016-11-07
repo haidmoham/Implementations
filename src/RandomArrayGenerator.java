@@ -10,7 +10,7 @@ public class RandomArrayGenerator {
         int[] ar = new int[n];
         System.out.println(n);
         for (int i = 0; i < n; i++) {
-            ar[i] = (int) (Math.random() * 10000 + 1);
+            ar[i] = (int) (Math.random() * n * n + 1);
             System.out.print(ar[i] + " ");
         }
     }
